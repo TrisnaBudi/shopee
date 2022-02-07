@@ -32,3 +32,9 @@ $router->post('/admin/users', 'UserController@store');
 $router->get('/admin/user/{id}', 'UserController@show');
 $router->put('/admin/user/{id}', 'UserController@update');
 $router->delete('/admin/user/{id}', 'UserController@destroy');
+
+$router->get('/admin/products', 'ProductController@index');
+$router->post('/admin/products', 'ProductController@store');
+$router->get('/admin/product/{id}', 'ProductController@show');
+$router->put('/admin/product/{id}', 'ProductController@update');
+$router->delete('/admin/product/{id}', 'ProductController@destroy');
