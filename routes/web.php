@@ -26,3 +26,9 @@ $router->post('/admin/pages', 'PageController@store');
 $router->get('/admin/page/{id}', 'PageController@show');
 $router->put('/admin/page/{id}', 'PageController@update');
 $router->delete('/admin/page/{id}', 'PageController@destroy');
+
+$router->get('/admin/users', 'UserController@index');
+$router->post('/admin/users', 'UserController@store');
+$router->get('/admin/user/{id}', 'UserController@show');
+$router->put('/admin/user/{id}', 'UserController@update');
+$router->delete('/admin/user/{id}', 'UserController@destroy');
