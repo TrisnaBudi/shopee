@@ -44,3 +44,9 @@ $router->post('/admin/comments', 'CommentController@store');
 $router->get('/admin/comment/{id}', 'CommentController@show');
 $router->put('/admin/comment/{id}', 'CommentController@update');
 $router->delete('/admin/comment/{id}', 'CommentController@destroy');
+
+$router->get('/admin/categoriesposts', 'CategoriespostsController@index');
+$router->post('/admin/categoriesposts', 'CategoriespostsController@store');
+$router->get('/admin/categoriesposts/{id}', 'CategoriespostsController@show');
+$router->put('/admin/categoriesposts/{id}', 'CategoriespostsController@update');
+$router->delete('/admin/categoriesposts/{id}', 'CategoriespostsController@destroy');
