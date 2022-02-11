@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Page;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Laravel\Lumen\Routing\Controller as BaseController;
 
@@ -40,10 +40,10 @@ class ProductController extends BaseController
         return response()->json($product, 200);
     }
 
-    public function update(Request $request, $id)
+    public function update($id)
     {
-        $input = $request->all();
         $product = Product::find($id);
+        $input = request()->all();
 
         if (!$product) {
             abort(404);
